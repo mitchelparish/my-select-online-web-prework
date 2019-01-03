@@ -1,9 +1,13 @@
-def my_select(collection)
-  i = 0
+def my_select(array)
+  count = 0
   result = []
-  while i < collection.length
-    result.push(yield array[i])
-      i += 1
+
+  while count < array.size
+    if yield(array[count]) == true
+      result.push(array[count])
   end
-  result
+  count += 1 
 end
+result
+end
+
