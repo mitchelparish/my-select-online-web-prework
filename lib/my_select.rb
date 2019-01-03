@@ -6,8 +6,7 @@ def my_select(array)
     if yield(array[count]) == true
       result.push(array[count])
   end
-  count += 1 
+  count += 1
 end
 result
 end
-
